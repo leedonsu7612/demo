@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+    <code id="1">
+        <name>사람은 무엇으로 사는가?</name>
+        <writer>톨스토이</writer>
+        <price>100</price>
+    </code>
+    <code id="2" type="novel">
+        <name>홍길동 전</name>
+        <writer>허균</writer>
+        <price>300</price>
+    </code>
+</book>
