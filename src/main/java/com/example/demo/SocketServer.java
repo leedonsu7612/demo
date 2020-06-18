@@ -18,8 +18,10 @@ public class SocketServer {
 		try {		
 			// 서버 소켓을 생성하고, 클라이언트에서 스트림을 받아드릴 소켓을 하나 더 생성합니다.
 			serverSocket=new ServerSocket(port);
+			System.out.println("serverSocket:::"+serverSocket);
 			System.out.println("소켓을 생성하여 클라이언트의 연결을 기다립니다. 포트번호="+port);
 			socket=serverSocket.accept();
+			
 			System.out.println("클라이언트와 연결되었습니다.");
 		} catch (IOException e) { 
 			throw e;
@@ -27,9 +29,9 @@ public class SocketServer {
 	}
 	
 	public void startSocket() {
-
+		System.out.println("444444444444444");
 		String str="";
-		
+		System.out.println("55555555555555");
 		try {		
 			
 			// 소켓에 스트림을 연결하고, 스트림을 읽어들일 reader를 만듭니다.
@@ -59,16 +61,19 @@ public class SocketServer {
 	}	
 	
 	public static void main(String args[]) {
-		
+		System.out.println("1111111111111111");
 		SocketServer s;
 		int port=8080;
 		
 		if (args.length>0) {
+			//string ->int 변환
 			port=Integer.parseInt(args[0]);
 		}
-		
+		System.out.println("22222222222222 ::"+args.length);
+		System.out.println("333333333333333");
 		try {
 			s=new SocketServer(port);
+			System.out.println("54353535"+s);
 			s.startSocket();
 		} catch (IOException e) {
 			System.out.println("소켓 생성에 실패했습니다.");

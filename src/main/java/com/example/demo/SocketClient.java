@@ -29,20 +29,8 @@ public class SocketClient {
 	public void startSocket() {
 
 //		String str="abcdefghij";
-		String str="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n" + 
-				"<book>\r\n" + 
-				"    <code id=\"1\">\r\n" + 
-				"        <name>사람은 무엇으로 사는가?</name>\r\n" + 
-				"        <writer>톨스토이</writer>\r\n" + 
-				"        <price>100</price>\r\n" + 
-				"    </code>\r\n" + 
-				"    <code id=\"2\" type=\"novel\">\r\n" + 
-				"        <name>홍길동 전</name>\r\n" + 
-				"        <writer>허균</writer>\r\n" + 
-				"        <price>300</price>\r\n" + 
-				"    </code>\r\n" + 
-				"</book>";
-		
+		String str="나랏말싸미뒹귁에달아";
+		System.out.println("66666666666666666");
 		try {		
 			
 			// 소켓에 스트림을 연결하고, 스트림을 보낼 Writer를 만듭니다.
